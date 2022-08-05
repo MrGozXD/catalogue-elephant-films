@@ -1,6 +1,6 @@
 import logo from './Logo_Elephant-Noir.png'
 import './App.css';
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet} from "react-router-dom";
 
 
 function App() {
@@ -27,5 +27,4 @@ function App() {
 }
 
 export default App;
-
 
