@@ -12,11 +12,11 @@ function App() {
       </header>
       <article>
         <div>
-            <Link to="/home">Home </Link>
-            <Link to="/login">Login </Link>
-            <Link to="/passwordreset">Reset </Link>
-            <Link to="/dashboard">Dashboard</Link>
-          <Outlet/>
+          <Link to="/home">Home </Link>
+          <Link to="/login">Login </Link>
+          <Link to="/passwordreset">Reset </Link>
+          <Link to="/dashboard">Dashboard</Link>
+          <Outlet />
         </div>
       </article>
       <footer className="App-footer">

@@ -8,6 +8,7 @@ import Home from './components/Home/Home.js';
 import PasswordReset from './components/PasswordReset/PasswordReset.js';
 import Dashboard from './components/Dashboard/Dashboard.js';
 import Login from './components/Login/Login';
+import Error from './components/Error/Error'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
           <Route path="/login" element={<Login />}/>
           <Route path="/passwordreset" element={<PasswordReset />}/>
           <Route path="/dashboard" element={<Dashboard />}/>
+          <Route path="*" element={<Error />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
