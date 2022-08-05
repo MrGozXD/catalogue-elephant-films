@@ -1,5 +1,16 @@
-import React from "react";
+import Userfront from "@userfront/react";
 
-export default function PasswordReset() {
-    return <h2>Password Reset</h2>;
-  }
+Userfront.init("6nz4zp8n");
+
+const PasswordResetForm = Userfront.build({
+  toolId: "kbklmr"
+});
+
+export default function Login() {
+    return (
+        <div>
+            <h2>Password Reset</h2>
+            <PasswordResetForm />
+        </div>
+    )
+}
