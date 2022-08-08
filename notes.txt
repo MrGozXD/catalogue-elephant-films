@@ -7,3 +7,6 @@ Problème = Tabletop télécharge toutes les données du Gsheet côté client
 cependant on ne veut pas donner accès au MVS original en le rendant public
 
 Solution : Créer une copie public de MVS
+
+problème avec tabletop : utilise l'APIv3 de Google, qui a été down mi 2021
+solution : passer à papa parse
