@@ -1,0 +1,9 @@
+Dashboard => afficher les infos du produit
+
+utiliser Tabletop.js pour récupérer les datas à partir d'un Gsheet
+ATTENTION : la Gsheet doit être public
+
+Problème = Tabletop télécharge toutes les données du Gsheet côté client
+cependant on ne veut pas donner accès au MVS original en le rendant public
+
+Solution : Créer une copie public de MVS
