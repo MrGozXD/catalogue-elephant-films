@@ -11,26 +11,7 @@ import Dashboard from './components/Dashboard/Dashboard.js';
 import Login from './components/Login/Login';
 import Error from './components/Error/Error';
 
-const Tabletop = require('tabletop');
 
-var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/126kFg-K5C5uQoGR6fVGYhThdLY31HcDjfxaThD4LdY4/edit?usp=sharing';
-
-function showInfo(data, tabletop) {
-  // do something with the data
-  console.log(JSON.stringify(data, null, 2));
-}
-
-function init() {
-  Tabletop.init(
-    {
-      key: publicSpreadsheetUrl,
-      callback: showInfo,
-      simpleSheet: false
-    }
-  )
-}
-
-init();
 
 function RequireAuth({ children }) {
   let location = useLocation();
