@@ -6,7 +6,7 @@ const PasswordResetForm = Userfront.build({
   toolId: "kbklmr"
 });
 
-export default function Login() {
+export default function PasswordReset() {
     return (
         <div>
             <h2>Password Reset</h2>
