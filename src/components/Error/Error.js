@@ -5,7 +5,7 @@ function Error() {
     return (
         <div className="Error">
             <h2>Error</h2>
-            <Link to="/">Back to root</Link>
+            <Link to="/">Retour à la page d'accueil</Link>
         </div>
     );
 }
