@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./SearchBar.css";
 import SearchIcon from '@mui/icons-material/Search';
+import Modal from '../Modal/Modal.js';
 
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
@@ -15,7 +16,18 @@ function SearchBar({ placeholder, data }) {
     setFilteredData(newFilter);
   };
 
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedArticle, setSelectedArticle] = useState(null);
+  
+  const handleOpenModal=(value)=>{
+    setSelectedArticle(value);
+    setModalVisible(true);  
+  };
 
+  const handleCloseModal=()=>{
+    setSelectedArticle(null);
+    setModalVisible(false);
+  };
 
   return (
     <div className="search">
@@ -29,11 +41,17 @@ function SearchBar({ placeholder, data }) {
         <div className="dataResult">
           {filteredData.map((value, key) => {
             return (
-              <a className="dataItem" href='https://github.com/MrGozXD' target="_blank">
-                <p>{value.Nom} EAN :{value['Code EAN']}</p> 
-              </a>
+              <div className="Article">
+                <button type="button" onClick={()=>handleOpenModal(value)}>
+                  {value.Nom} EAN :{value['Code EAN']}
+                </button>
+              </div>
             );
           })}
+          <Modal visible={modalVisible} cancel={handleCloseModal} >
+            <h1>Hello World</h1>
+            <p>I am {selectedArticle && selectedArticle.Nom}</p>
+          </Modal>
         </div>
       )}
     </div>
