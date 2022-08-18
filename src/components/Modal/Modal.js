@@ -1,28 +1,28 @@
-import React,{useEffect,useRef} from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./Modal.css"
 
 function Modal(props) {
-    
-    const{visible,cancel,children}=props;
+
+    const { visible, cancel, children } = props;
     const modalRef = useRef(null);
 
     useEffect(() => {
-      const checkIfClickedOutside=(e)=>{
-        if (visible && modalRef.current && !modalRef.current.contains(e.target)){
-            cancel();
-        }
-      };
+        const checkIfClickedOutside = (e) => {
+            if (visible && modalRef.current && !modalRef.current.contains(e.target)) {
+                cancel();
+            }
+        };
 
-      document.addEventListener("mousedown",checkIfClickedOutside);
-    
-      return () => {
-        document.removeEventListener("mousedown",checkIfClickedOutside);
-      };
+        document.addEventListener("mousedown", checkIfClickedOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", checkIfClickedOutside);
+        };
     }, [visible]);
 
-    return(
+    return (
         <>
-            {visible &&(
+            {visible && (
                 <div className="modal-bg">
                     <div ref={modalRef} className="modal-container">
                         <button onClick={cancel}>close modal</button>
@@ -31,7 +31,7 @@ function Modal(props) {
                 </div>
             )}
         </>
-    ); 
+    );
 };
 
 export default Modal
