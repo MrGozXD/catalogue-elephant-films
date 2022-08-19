@@ -9,7 +9,7 @@ function SearchBar({ placeholder, data }) {
     const searchWord = event.target.value;
     const newFilter = data.filter((value)=>{
       return (
-        value.Nom.toLowerCase().includes(searchWord.toLowerCase()) || value['Code EAN'].includes(searchWord) 
+        value.Nom.toLowerCase().includes(searchWord.toLowerCase()) || value['Code EAN'].includes(searchWord) || value['Titre original'].toLowerCase().includes(searchWord.toLowerCase())
       ) 
         /* filtre à réécrire => return true si searchWord match avec value.critèreX || value.critèreY || etc */
     });
@@ -50,7 +50,8 @@ function SearchBar({ placeholder, data }) {
           })}
           <Modal visible={modalVisible} cancel={handleCloseModal} >
             <h1>Hello World</h1>
-            <p>I am {selectedArticle && selectedArticle.Nom}</p>
+            <h4>I am {selectedArticle && selectedArticle.Nom} </h4>
+            <h4>Titre original : {selectedArticle && selectedArticle['Titre original']}</h4>
           </Modal>
         </div>
       )}
