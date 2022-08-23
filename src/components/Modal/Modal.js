@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useLayoutEffect, useRef } from 'react'
 import "./Modal.css"
+
 
 function Modal(props) {
 
@@ -27,6 +28,7 @@ function Modal(props) {
                     <div ref={modalRef} className="modal-container">
                         <button onClick={cancel}>close modal</button>
                         {children}
+
                     </div>
                 </div>
             )}
