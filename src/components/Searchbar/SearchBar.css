@@ -1,5 +1,3 @@
-
-
 .searchInputs {
     margin-top: auto;
     display: flex;
@@ -46,10 +44,21 @@ input:focus {
     overflow-y: auto;
 }
 
+.Infos {
+    margin-top: 5px;
+    width: auto;
+    height: 300px;
+    background-color: rgb(50, 255, 135);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/*
 .dataResult::-webkit-scrollbar {
     display: none;
 }
-
+*/
 .dataResult .dataItem {
     width: 100%;
     height: 50px;
@@ -66,7 +75,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     background-color: lightgrey;
 }
 
