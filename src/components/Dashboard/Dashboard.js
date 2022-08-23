@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Userfront from "@userfront/react";
 import SearchBar from "../Searchbar/SearchBar.js";
+import Loading from "../Loading/Loading.js"
 
 const Papa = require('papaparse');
+// URL de Copie de DataPlugOnline.csv
 const publicSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1QGEpIxLSwBBJ-bbUEhsQuDOxMosn0fX6xTkHN7xGEcaYXa8bBihTNfHcevcf_7SokkepX0tMtnFW/pub?gid=0&single=true&output=csv";
-
+//const publicSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTzEdx3_SCVoD2y0TPyiEyvDUY_f5soB3DycpJ2j5zV83y7pnspYOABs2LmLEqD8R3OBfjd59Cj_wdz/pub?gid=1089429673&single=true&output=csv";
 
 
 export default function Dashboard() {
@@ -32,7 +34,7 @@ export default function Dashboard() {
 
     if (complete === false) {
         // Affichage d'un message de chargement
-        return (<h1>chargement</h1>);
+        return(<div><Loading/></div>);
     } else {
         // Affichage de la barre de recherche après chargement des données 
         return (
