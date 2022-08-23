@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Userfront from "@userfront/react";
 import SearchBar from "../Searchbar/SearchBar.js";
-import Loading from "../Loading/Loading.js"
+import Loading from "../Loading/Loading.js";
+import Header from "../Header/Header.js";
 
 const Papa = require('papaparse');
 // URL de Copie de DataPlugOnline.csv
@@ -39,6 +40,7 @@ export default function Dashboard() {
         // Affichage de la barre de recherche après chargement des données 
         return (
             <div>
+                <Header/>
                 <h2>Dashboard</h2>
                 <SearchBar placeholder="Recherche..." data={global.catalogue} />
                 <button onClick={Userfront.logout}>Logout</button>

@@ -10,3 +10,7 @@ Solution : Créer une copie public de MVS
 
 problème avec tabletop : utilise l'APIv3 de Google, qui a été down mi 2021
 solution : passer à papa parse
+
+papa parse fonctionne , toute la base en csv est dl en json dans le navigateur, maintenant faut afficher correctement les données
+
+hook qui met à jour la liste des articles affichés en fonction de la recherche (input.toLowerCase)
