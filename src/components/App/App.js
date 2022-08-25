@@ -1,7 +1,7 @@
 import logo from './Logo_Elephant-Noir.png'
 import './App.css';
 import { Link, Outlet } from "react-router-dom";
-
+import Userfront from "@userfront/react";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         </div>
       </article>
       <footer className="App-footer">
+        <button onClick={Userfront.logout}>Logout</button>
         <p>Bas de page</p>
       </footer>
     </div>
