@@ -23,15 +23,26 @@ function RequireAuth({ children }) {
   return children;
 }
 
+function RequireAuthAdmin({ children }) {
+  let location = useLocation();
+  // remplacer email par celui de John
+  if (!(Userfront.user["email"]==="giratina@pokemon.com")) {
+    // Redirect to the /login page
+    return <Navigate to="/" state={{ from: location }} replace />;
+  }
+
+  return children;
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<RequireAuthAdmin><Home /></RequireAuthAdmin>} />
         <Route path="/login" element={<Login />} />
-        <Route path="/passwordreset" element={<PasswordReset />} />
+        <Route path="/passwordreset" element={<RequireAuthAdmin><PasswordReset /></RequireAuthAdmin>} />
         <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />
         <Route path="*" element={<Error />} />
       </Routes>
