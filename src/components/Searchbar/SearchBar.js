@@ -42,7 +42,7 @@ function SearchBar({ placeholder, data }) {
           {filteredData.map((value, key) => {
             return (
               <div className="Article">
-                <button type="button" onClick={() => handleOpenModal(value)}>
+                <button className="buttonArticle" type="button" onClick={() => handleOpenModal(value)}>
                   {value.Nom} EAN :{value['Code EAN']}
                 </button>
               </div>
@@ -51,63 +51,63 @@ function SearchBar({ placeholder, data }) {
           <Modal visible={modalVisible} cancel={handleCloseModal} >
             <h1>{selectedArticle && selectedArticle.Nom}</h1>
             <div className="Infos">
-              <h4>EAN :</h4>
-              <h4>Référence :</h4>
-              <h4>Référence 2 :</h4>
-              <h4>Référence 3 :</h4>
-              <h4>Désignation :</h4>
-              <h4>Code Type :</h4>
-              <h4>Type :</h4>
-              <h4>Cat Gestion :</h4>
-              <h4>Tarif :</h4>
-              <h4>Tarif 2 :</h4>
-              <h4>Tarif 3 :</h4>
-              <h4>Tarif 4 :</h4>
-              <h4>Date de sortie :</h4>
-              <h4>Code Etat :</h4>
-              <h4>Date de retrait :</h4>
-              <h4>Seuil alerte :</h4>
-              <h4>Titre original : {selectedArticle && selectedArticle['Titre original']}</h4>
-              <h4>Année :</h4>
-              <h4>Durée :</h4>
-              <h4>Info complémentaire :</h4>
-              <h4>Vidéo url :</h4>
-              <h4>Sell Off :</h4>
-              <h4>SKU Ebay :</h4>
-              <h4>SKU Cdiscount :</h4>
-              <h4>Studio :</h4>
-              <h4>Edition :</h4>
-              <h4>Saga :</h4>
-              <h4>Genre</h4>
-              <h4>Catégorie</h4>
-              <h4>Collection/Licence</h4>
-              <h4>Bande-annonce :</h4>
-              <h4>Réalisateur :</h4>
-              <h4>Scénariste :</h4>
-              <h4>Acteur :</h4>
-              <h4>Musique :</h4>
-              <h4>Nationalité :</h4>
-              <h4>Couleur/NB :</h4>
-              <h4>Format d'image :</h4>
-              <h4>Format Vidéo :</h4>
-              <h4>Langues Audio Dolby Digital :</h4>
-              <h4>Langues Audio DTS</h4>
-              <h4>Bonus :</h4>
-              <h4>Contenu :</h4>
-              <h4>Visa :</h4>
-              <h4>Sous-titres :</h4>
-              <h4>Nb rondelles :</h4>
-              <h4>Titre page :</h4>
-              <h4>ASIN :</h4>
-              <h4>FNSKU-1 :</h4>
-              <h4>FNSKU-2 :</h4>
-              <h4>Info référencement :</h4>
-              <h4>Saison :</h4>
-              <h4>Nb. épisodes :</h4>
-              <h4>Titres des épisodes :</h4>
-              <h4>Commentaires :</h4>
+              <h2>EAN : <span>Lorem ipsum </span></h2>
+              <h2>Référence :</h2>
+              <h2>Référence 2 :</h2>
+              <h2>Référence 3 :</h2>
+              <h2>Désignation :</h2>
+              <h2>Code Type :</h2>
+              <h2>Type :</h2>
+              <h2>Cat Gestion :</h2>
+              <h2>Tarif :</h2>
+              <h2>Tarif 2 :</h2>
+              <h2>Tarif 3 :</h2>
+              <h2>Tarif 4 :</h2>
+              <h2>Date de sortie :</h2>
+              <h2>Code Etat :</h2>
+              <h2>Date de retrait :</h2>
+              <h2>Seuil alerte :</h2>
+              <h2>Titre original : {selectedArticle && selectedArticle['Titre original']}</h2>
+              <h2>Année :</h2>
+              <h2>Durée :</h2>
+              <h2>Info complémentaire :</h2>
+              <h2>Vidéo url :</h2>
+              <h2>Sell Off :</h2>
+              <h2>SKU Ebay :</h2>
+              <h2>SKU Cdiscount :</h2>
+              <h2>Studio :</h2>
+              <h2>Edition :</h2>
+              <h2>Saga :</h2>
+              <h2>Genre</h2>
+              <h2>Catégorie</h2>
+              <h2>Collection/Licence</h2>
+              <h2>Bande-annonce :</h2>
+              <h2>Réalisateur :</h2>
+              <h2>Scénariste :</h2>
+              <h2>Acteur :</h2>
+              <h2>Musique :</h2>
+              <h2>Nationalité :</h2>
+              <h2>Couleur/NB :</h2>
+              <h2>Format d'image :</h2>
+              <h2>Format Vidéo :</h2>
+              <h2>Langues Audio Dolby Digital :</h2>
+              <h2>Langues Audio DTS</h2>
+              <h2>Bonus :</h2>
+              <h2>Contenu :</h2>
+              <h2>Visa :</h2>
+              <h2>Sous-titres :</h2>
+              <h2>Nb rondelles :</h2>
+              <h2>Titre page :</h2>
+              <h2>ASIN :</h2>
+              <h2>FNSKU-1 :</h2>
+              <h2>FNSKU-2 :</h2>
+              <h2>Info référencement :</h2>
+              <h2>Saison :</h2>
+              <h2>Nb. épisodes :</h2>
+              <h2>Titres des épisodes :</h2>
+              <h2>Commentaires :</h2>
               <div className="Description">
-                <h4>{selectedArticle && selectedArticle['Résumé']}</h4>
+                Pellentesque a aliquam elit. Nam sit amet orci molestie, sollicitudin quam non, sagittis ante. Sed ornare erat sit amet augue finibus, bibendum tincidunt magna gravida. Nullam quam quam, ultrices ac ultricies eu, placerat nec lectus. Donec ornare lacus eu nisi vulputate, ut semper arcu vestibulum. Pellentesque suscipit, erat sit amet feugiat porttitor, nisi orci efficitur tellus, vel vehicula ipsum sem vitae neque. Sed ullamcorper urna id sapien rutrum scelerisque. Ut id gravida sem, porta consequat odio. Sed euismod mauris erat, sit amet dapibus justo lacinia eget. Nullam pretium scelerisque quam, ac auctor elit blandit nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras justo eros, eleifend id venenatis non, laoreet et purus. Suspendisse vulputate at risus at iaculis.
               </div>
 
             </div>
