@@ -7,41 +7,44 @@ import logo from "./Logo_Elephant-Fond_Fonce.png"
 function Header() {
   if (Userfront.user["email"]==="giratina@pokemon.com") {
     return(
-      <div className="top">
-        <div className="topLeft">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <div className="topCenter">
-          <ul className="topList">
-            <Link to="/home">Créer un compte </Link>
-            <Link to="/login">Login </Link>
-            <Link to="/passwordreset">Reset </Link>
-            <Link to="/dashboard">Dashboard</Link>
-            <Link to="/dashboardAdmin">Admin</Link>
-            <Outlet />
-          </ul>
-        </div>
-        <div className="topRight">
-          <h1>Hello</h1>
+      <div className="Header">
+        <div className="Header-wrapper">
+          <div className="Header-left">
+            <img src={logo} className="Header-logo" alt="logo" />
+          </div>
+          <div className="Header-center">
+            <ul className="Header-list">
+              <div className="Header-admin">
+                <Link to="/home">Créer un compte </Link>
+                <Outlet />
+              </div>
+              <div className="Header-admin">
+                <Link to="/passwordreset">Mot de passe oublié </Link>
+                <Outlet />
+              </div>
+            </ul>
+          </div>
+          <div className="Header-right">
+            <div className="Header-right-logout">
+              <button onClick={Userfront.logout}>Se déconnecter</button>
+            </div>
+          </div>
         </div>
       </div>
     );
   }else{
     return(
-      <div className="top">
-        <div className="topLeft">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <div className="topCenter">
-          <ul className="topList">
-            <Link to="/">Accueil </Link>
-            <Link to="/passwordreset">Reset </Link>
-            <Outlet />
-          </ul>
-        </div>
-        <div className="topRight">
-          <h1>Hello</h1>
-        </div>
+      <div className="Header">
+        <div className="Header-wrapper">
+          <div className="Header-left">
+            <img src={logo} className="Header-logo" alt="logo" />
+          </div>
+          <div className="Header-right">
+            <div className="Header-right-logout">
+              <button onClick={Userfront.logout}>Se déconnecter</button>
+            </div>
+          </div>
+        </div>  
       </div>
     );
   }
