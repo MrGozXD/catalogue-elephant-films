@@ -1,5 +1,5 @@
 .modal-bg {
-  background-color: rgba(0, 0, 0, 0.070);
+  background-color: rgba(0, 0, 0, 0.090);
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -14,7 +14,9 @@
   background-color: white;
   padding: 20px;
   width: 80%;
+  height: auto;
   margin: 0 auto;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .modal-container button {
