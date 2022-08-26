@@ -1,5 +1,8 @@
 import React from "react";
+import { Link, Outlet} from "react-router-dom";
 import Userfront from "@userfront/react";
+import "./Home.css"
+import logo from "../Header/Logo_Elephant-Fond_Fonce.png"
 
 Userfront.init("6nz4zp8n"); //identifiant compte Userfront
 
@@ -8,11 +11,19 @@ const SignupForm = Userfront.build({
 });
 
 export default function Home() {
-    return (
-        <div>
-            <h2>Home</h2>
-            <SignupForm/>
+  return (
+    <div>
+      <div className="Header-home">
+        <div className="Header-wrapper">
+          <div className="Header-left">
+            <img src={logo} className="Header-logo" alt="logo" />
+          </div>
         </div>
-    )
+      </div>
+      <div className="SignupForm">
+        <SignupForm />
+      </div>
+    </div>
+  );
 }
 
