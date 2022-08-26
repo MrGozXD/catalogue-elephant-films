@@ -41,9 +41,7 @@ export default function Dashboard() {
         return (
             <div>
                 <Header/>
-                <h2>Dashboard</h2>
                 <SearchBar placeholder="Recherche..." data={global.catalogue} />
-                <button onClick={Userfront.logout}>Logout</button>
             </div>
         );
     };
