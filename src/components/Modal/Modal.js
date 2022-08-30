@@ -26,9 +26,8 @@ function Modal(props) {
       {visible && (
         <div className="modal-bg">
           <div ref={modalRef} className="modal-container">
-            <button onClick={cancel}>close modal</button>
             {children}
-
+            <button onClick={cancel}>Fermer</button>
           </div>
         </div>
       )}

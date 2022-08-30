@@ -11,6 +11,10 @@
 }
   
 .modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
   background-color: white;
   padding: 20px;
   width: 80%;
@@ -21,7 +25,17 @@
 
 .modal-container button {
   display: flex;
-  justify-content: right;
-  background-color: rgb(209, 228, 40);
+  background: #CABA9E;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  
 }
 
+.modal-container button:hover {
+  background: beige;
+  color : black;
+}
