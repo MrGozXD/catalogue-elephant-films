@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Userfront from "@userfront/react";
 import SearchBar from "../Searchbar/SearchBar.js";
 import Loading from "../Loading/Loading.js";
 import Header from "../Header/Header.js";
