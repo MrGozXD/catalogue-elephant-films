@@ -16,7 +16,8 @@ export default function Login() {
         <div className="Header-login">
           <div className="Header-wrapper">
             <div className="Header-left">
-              <img src={logo} className="Header-logo" alt="logo" />
+              <Link to="/"><img src={logo} className="Header-logo" alt="logo" /></Link>
+              <Outlet />
             </div>
           </div>
         </div>

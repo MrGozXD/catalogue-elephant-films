@@ -1,5 +1,6 @@
 import React from "react";
 import Userfront from "@userfront/react";
+import { Link, Outlet} from "react-router-dom";
 import logo from "../Header/Logo_Elephant-Fond_Fonce.png"
 import "./PasswordReset.css"
 
@@ -15,7 +16,8 @@ export default function PasswordReset() {
       <div className="Header-passwordreset">
         <div className="Header-wrapper">
           <div className="Header-left">
-            <img src={logo} className="Header-logo" alt="logo" />
+            <Link to="/"><img src={logo} className="Header-logo" alt="logo" /></Link>
+            <Outlet />
           </div>
         </div>
       </div> 

@@ -10,7 +10,8 @@ function Header() {
       <div className="Header">
         <div className="Header-wrapper">
           <div className="Header-left">
-            <img src={logo} className="Header-logo" alt="logo" />
+            <Link to="/"><img src={logo} className="Header-logo" alt="logo" /></Link>
+            <Outlet />
           </div>
           <div className="Header-center">
             <ul className="Header-list">
@@ -37,7 +38,8 @@ function Header() {
       <div className="Header">
         <div className="Header-wrapper">
           <div className="Header-left">
-            <img src={logo} className="Header-logo" alt="logo" />
+            <Link to="/"><img src={logo} className="Header-logo" alt="logo" /></Link>
+            <Outlet />
           </div>
           <div className="Header-right">
             <div className="Header-right-logout">
