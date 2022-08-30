@@ -2,10 +2,12 @@
     margin-top: 70px;
     display: flex;
     justify-content: center;
+    
+    
 }
 
 .search input {
-    background-color: rgb(112, 48, 48);
+    background-color: beige;
     border: 0;
     border-radius: 2px;
     border-top-right-radius: 0px;
@@ -14,12 +16,16 @@
     padding: 15px;
     height: 30px;
     width: 300px;
+    -webkit-box-shadow:inset 0px 0px 0px 5px #CABA9E;
+    -moz-box-shadow:inset 0px 0px 0px 5px #CABA9E;
+    box-shadow:inset 0px 0px 0px 5px #CABA9E;
 }
 
 .searchIcon {
     height: 60px;
     width: 50px;
-    background-color: rgb(255, 20, 20);
+    color: white;
+    background-color: #CABA9E;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     display: grid;
