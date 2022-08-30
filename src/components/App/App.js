@@ -12,10 +12,7 @@ function App() {
       </div>
       <div className="App-wrapper">
         <div className="App-links">
-          <Link to="/home">Home </Link>
-          <Link to="/login">Login </Link>
-          <Link to="/passwordreset">Reset </Link>
-          <Link to="/dashboard">Dashboard</Link>
+          <Link className="App-dashboard-link" to="/dashboard">Consulter</Link>
           <Outlet />
         </div>
       </div>

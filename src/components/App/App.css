@@ -1,4 +1,5 @@
 .App {
+  width: 100%;
   background-color: rgb(43, 43, 43);
   text-align: center;
   display: flex;
@@ -20,34 +21,57 @@
 }
 
 .App-logo {
-  height: 50px;
-  width: auto;
-  
-  object-fit:contain;
+  margin-left: 5px;
+  margin-right: 5px;
+  max-height: 70px;
+  max-width: 97%;
 }
 
 .App-wrapper {
   flex: 1;
 }
 .App-links {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   
 }
 
-.App-footer{
-  
+.App-dashboard-link {
+  display: block;
+  width: 115px;
+  height: 25px;
+  background: #CABA9E;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
 }
+
+.App-dashboard-link:hover {
+  background-color: rgb(255, 255, 255);
+  color : black;  
+}
+
+
+/*.App-footer{
+  
+}*/
 
 .buttonLogout {
-  height: 100%;
-  width: 10%;
+  height: 25px;
+  width: 115px;
   border : none;
-  
   color :black;
   background-color: rgb(255, 255, 0);
 }
 
 .buttonLogout:hover {
-  background-color: aqua;
+  background-color: white;
+  color : black;
 }
 
 .App-footer p {
