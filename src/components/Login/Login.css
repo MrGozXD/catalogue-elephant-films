@@ -1,16 +1,12 @@
-body {
-    background-color: white;
-}
-
 .LoginForm {
     position: absolute;
+    margin-top: 70px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .Header-login {
-    
     width: 100%;
     height: 90px;
     background-color: rgb(43, 43, 43);
@@ -19,21 +15,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
-    
-    
 }  
   
-.Header-wrapper{
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.Header-logo {
-    margin-left: 5px;
-    max-height: 70px;
-    max-width: 95%;
-    
-}
 
