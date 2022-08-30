@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useEffect,useRef } from 'react'
 import "./Modal.css"
 
 
@@ -19,7 +19,7 @@ function Modal(props) {
     return () => {
       document.removeEventListener("mousedown", checkIfClickedOutside);
     };
-  }, [visible]);
+  }, [cancel, visible]);
 
   return (
     <>
