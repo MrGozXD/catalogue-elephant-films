@@ -18,8 +18,10 @@ export default function PasswordReset() {
             <img src={logo} className="Header-logo" alt="logo" />
           </div>
         </div>
-      </div>  
-      <PasswordResetForm />
+      </div> 
+      <div className="PasswordResetForm"> 
+        <PasswordResetForm />
+      </div>
     </div>
   );
 }
