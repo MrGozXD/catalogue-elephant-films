@@ -35,13 +35,14 @@
 .Header-right-logout button {
   height: 90px;
   width: 100%;
+  font-weight: bold;
   border: none;
-  color: black;
+  color: white;
   background-color: #CABA9E;
 }
 
 .Header-right-logout button:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: beige;
   color: black;
 }
 
