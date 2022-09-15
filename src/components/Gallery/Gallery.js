@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+/* eslint-disable jsx-a11y/alt-text */
+import React, {useState} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
