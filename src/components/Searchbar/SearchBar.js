@@ -81,7 +81,7 @@ function SearchBar({ placeholder, data }) {
               <h2>Genre : <span>{selectedArticle && selectedArticle["Genre"]} </span></h2>
               <h2>Catégorie : <span>{selectedArticle && selectedArticle["Catégorie"]} </span></h2>
               <h2>Collection/Licence : <span>{selectedArticle && selectedArticle["Collection/Licence"]} </span></h2>
-              <h2>Bande-annonce : <span>{selectedArticle && selectedArticle["Bande-annonce"]} </span></h2>
+              <h2>Bande-annonce : <span><a href={selectedArticle && selectedArticle["Bande-annonce"]} target="_blank" rel="noopener noreferrer">{selectedArticle && selectedArticle["Bande-annonce"]}</a></span></h2>
               <h2>Réalisateur : <span>{selectedArticle && selectedArticle["Réalisateur"]} </span></h2>
               <h2>Scénariste : <span>{selectedArticle && selectedArticle["Scénariste"]} </span></h2>
               <h2>Acteur : <span>{selectedArticle && selectedArticle["Acteur"]} </span></h2>
@@ -89,28 +89,27 @@ function SearchBar({ placeholder, data }) {
               <h2>Nationalité : <span>{selectedArticle && selectedArticle["Nationalité"]} </span></h2>
               <h2>Couleur/NB : <span>{selectedArticle && selectedArticle["Couleur/NB"]} </span></h2>
               <h2>Format d'image : <span>{selectedArticle && selectedArticle["Format d'image"]} </span></h2>
-              <h2>Format Vidéo : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Langues Audio Dolby Digital : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Langues Audio DTS : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Bonus : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Contenu : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Visa : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Sous-titres : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Nb rondelles : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Titre page : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>ASIN : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>FNSKU-1 : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>FNSKU-2 : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Info référencement : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>RCA : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Saison : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Nb. épisodes : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Titres des épisodes : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
-              <h2>Commentaires : <span>{selectedArticle && selectedArticle.EAN} </span></h2>
+              <h2>Format Vidéo : <span>{selectedArticle && selectedArticle["Format Vidéo"]} </span></h2>
+              <h2>Langues Audio Dolby Digital : <span>{selectedArticle && selectedArticle["Langues Audio Dolby Digital"]} </span></h2>
+              <h2>Langues Audio DTS : <span>{selectedArticle && selectedArticle["Langues Audio DTS"]} </span></h2>
+              <h2>Bonus : <span>{selectedArticle && selectedArticle["Bonus"]} </span></h2>
+              <h2>Contenu : <span>{selectedArticle && selectedArticle["Contenu"]} </span></h2>
+              <h2>Visa : <span>{selectedArticle && selectedArticle["Visa"]} </span></h2>
+              <h2>Sous-titres : <span>{selectedArticle && selectedArticle["Sous-titres"]} </span></h2>
+              <h2>Nb rondelles : <span>{selectedArticle && selectedArticle["Nb rondelles"]} </span></h2>
+              <h2>Titre page : <span>{selectedArticle && selectedArticle["Titre page"]} </span></h2>
+              <h2>ASIN : <span>{selectedArticle && selectedArticle["ASIN"]} </span></h2>
+              <h2>FNSKU-1 : <span>{selectedArticle && selectedArticle["FNSKU-1"]} </span></h2>
+              <h2>FNSKU-2 : <span>{selectedArticle && selectedArticle["FNSKU-2"]} </span></h2>
+              <h2>Info référencement : <span>{selectedArticle && selectedArticle["Info référencemt"]} </span></h2>
+              <h2>RCA : <span>{selectedArticle && selectedArticle["RCA"]} </span></h2>
+              <h2>Saison : <span>{selectedArticle && selectedArticle["Saison"]} </span></h2>
+              <h2>Nb. épisodes : <span>{selectedArticle && selectedArticle["Nb. épisodes"]} </span></h2>
+              <h2>Titres des épisodes : <span>{selectedArticle && selectedArticle["Titres des épisodes"]} </span></h2>
+              <h2>Commentaires : <span>{selectedArticle && selectedArticle["Commentaires"]} </span></h2>
               <div className="Description">
                 {selectedArticle && selectedArticle['Description']}
               </div>
-
             </div>
           </Modal>
         </div>

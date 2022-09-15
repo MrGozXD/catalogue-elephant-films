@@ -43,10 +43,10 @@ input:focus {
 .dataResult {
     margin-top: 0px;
     width: auto;
-    max-height: 70vh;
+    max-height: 60vh;
     box-sizing: border-box;
     border: none;
-    background-color: rgb(211, 255, 50);
+    background-color: beige;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     overflow: hidden;
     overflow-y: auto;
@@ -116,3 +116,10 @@ a {
 }
 
 
+.Infos a {
+    color : black;
+}
+
+.Infos a:hover {
+    color : #CABA9E;
+}

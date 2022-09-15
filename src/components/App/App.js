@@ -1,7 +1,6 @@
-import logo from '../Header/Logo_Elephant-Fond_Fonce.png'
+import logo from '../Header/Logo_Elephant-Fond_Fonce.png';
 import './App.css';
 import { Link, Outlet } from "react-router-dom";
-import Userfront from "@userfront/react";
 
 function App() {
   return (
@@ -17,8 +16,7 @@ function App() {
         </div>
       </div>
       <div className="App-footer">
-        <button className="buttonLogout" onClick={Userfront.logout}>Logout</button>
-        <p>Bas de page</p>
+        <p>Site réalisé par <span><a href="https://www.linkedin.com/in/yannis-peloutier-00331017a/">Yannis Peloutier</a></span></p>
       </div>
     </div>
   );
