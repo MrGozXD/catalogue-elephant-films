@@ -2,7 +2,7 @@
   "name": "catalogue-elephant-films",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mrgozxd.github.io/catalogue-elephant-films",
+  "homepage": "",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
