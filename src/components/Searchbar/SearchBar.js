@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react'
 import "./SearchBar.css";
 import SearchIcon from '@mui/icons-material/Search';
 import Modal from '../Modal/Modal.js';
-import Gallery from '../Gallery/Gallery.js';
+//import Gallery from '../Gallery/Gallery.js';
 
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
