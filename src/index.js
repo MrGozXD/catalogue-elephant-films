@@ -39,7 +39,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="./" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route path="/home" element={<RequireAuthAdmin><Home /></RequireAuthAdmin>} />
         <Route path="/login" element={<Login />} />
         <Route path="/passwordreset" element={<RequireAuthAdmin><PasswordReset /></RequireAuthAdmin>} />
