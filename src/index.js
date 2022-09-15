@@ -26,7 +26,7 @@ function RequireAuth({ children }) {
 function RequireAuthAdmin({ children }) {
   let location = useLocation();
   // remplacer email par celui de John
-  if ((!(Userfront.user["email"]==="giratina@pokemon.com")||(!(Userfront.user["email"]==="j.sayada@wanadoo.fr")))) {
+  if ((!(Userfront.user["email"]==="giratina@pokemon.com"))||(!(Userfront.user["email"]==="j.sayada@wanadoo.fr"))) {
     // Redirect to the /login page
     return <Navigate to="/" state={{ from: location }} replace />;
   }
