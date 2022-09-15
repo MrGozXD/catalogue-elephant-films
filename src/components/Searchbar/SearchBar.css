@@ -123,3 +123,11 @@ a {
 .Infos a:hover {
     color : #CABA9E;
 }
+
+.Infos img {
+    max-height: 200px;
+}
+
+.Modal img {
+    max-height: 40px;
+}

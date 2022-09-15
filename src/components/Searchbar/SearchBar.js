@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./SearchBar.css";
 import SearchIcon from '@mui/icons-material/Search';
 import Modal from '../Modal/Modal.js';
+import Gallery from '../Gallery/Gallery.js';
 
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
@@ -44,14 +45,16 @@ function SearchBar({ placeholder, data }) {
               <div className="Article">
                 <button className="buttonArticle" type="button" onClick={() => handleOpenModal(value)}>
                   {value['Désignation']}
+                  
                 </button>
+                
               </div>
             );
           })}
           <Modal visible={modalVisible} cancel={handleCloseModal} >
             <h1>{selectedArticle && selectedArticle['Désignation']}</h1>
             <div className="Infos">
-              <h2>EAN : <span>{selectedArticle && selectedArticle[1]} </span></h2>
+              <h2>EAN : <span>{selectedArticle && selectedArticle["EAN"]} </span></h2>
               <h2>Référence : <span>{selectedArticle && selectedArticle["Référence"]} </span></h2>
               <h2>Référence 2 : <span>{selectedArticle && selectedArticle["Référence 2"]} </span></h2>
               <h2>Référence 3 : <span>{selectedArticle && selectedArticle["Référence 3"]} </span></h2>
@@ -110,6 +113,7 @@ function SearchBar({ placeholder, data }) {
               <div className="Description">
                 {selectedArticle && selectedArticle['Description']}
               </div>
+              <img src={"https://e-nautia.com/j.sayada/disk/CATALOGUE/"+(selectedArticle && selectedArticle["EAN"])+"/"+(selectedArticle && selectedArticle["EAN"])+"_1.jpg"} />
             </div>
           </Modal>
         </div>
